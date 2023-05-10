@@ -13,11 +13,16 @@ public class Main {
 
       switch (usersCommand) {
         case "add":
+          String mealType;
           System.out.println("Which meal do you want to add (breakfast, lunch, dinner)?");
-          String mealType = scanner.nextLine();
-          if (usersCommand.equals("breakfast") || usersCommand.equals("lunch") || usersCommand.equals("dinner")) {
-            System.out.println("Wrong meal category! Choose from: breakfast, lunch, dinner");
-            break;
+
+          while (true) {
+            mealType = scanner.nextLine();
+            if (mealType.equals("breakfast") || mealType.equals("lunch") || mealType.equals("dinner")) {
+              break;
+            } else {
+              System.out.println("Wrong meal category! Choose from: breakfast, lunch, dinner");
+            }
           }
 
           System.out.println("Input the meal's name:");
