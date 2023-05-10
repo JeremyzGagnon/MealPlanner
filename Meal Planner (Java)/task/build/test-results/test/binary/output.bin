@@ -1,0 +1,9 @@
+[1;31m
+Start test 1[0m
+-What would you like to do (add, show, exit)?
+> show
+"No meals saved. Add a meal first.
+-What would you like to do (add, show, exit)?
+> new meal
+ Wrong format. Use letters only!
+-What would you like to do (add, show, exit)?
